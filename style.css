@@ -1,0 +1,106 @@
+html {
+    scroll-behavior: smooth;
+
+    background-image: linear-gradient(rgb(134, 133, 159), rgb(36, 37, 63), rgb(22, 26, 48));
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgb(134, 133, 159), rgb(36, 37, 63), rgb(22, 26, 48));
+    background-size: auto;
+    background-repeat: no-repeat;
+    font-family: 'Poppins';
+    overflow-x: hidden;
+}
+.navlinkbar{
+    font-size: medium;
+    
+}
+.hero-title{
+    position: absolute;
+}
+.cusulisted{
+    margin-right: 10px;
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    color: white;
+}
+.cusulisted li {
+    margin: 0 10px;
+    color: white;
+    margin-top: 20px;
+}
+.cusulisted a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+section{
+    display: grid;
+    place-items: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-left: 50px;
+    padding-top: 90px;
+    color: white;
+}
+.hero-name{
+    position: relative;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+.field{
+    margin-left: 200px;
+}
+.stack{
+    color: red;
+}
+.hero-stack{
+    color: red;
+}
+
+@keyframes slideIn-avatar {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes slideIn-strips {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .avatar {
+    position: absolute;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    animation: slideIn-avatar 1s forwards;
+    width: 500px;
+  }
+  .stripes {
+    position: absolute;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    animation: slideIn-strips 1s forwards;
+    width: 500px;
+  }
+  
+  .stripes {
+    left: 10%; /* Initial position outside the viewport */
+  }
+  
+  .avatar {
+    left: 10%; /* Initial position outside the viewport */
+  }
+  
