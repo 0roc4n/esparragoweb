@@ -12,7 +12,7 @@ body{
     background-image: linear-gradient(rgb(134, 133, 159), rgb(36, 37, 63), rgb(22, 26, 48));
     background-size: auto;
     background-repeat: no-repeat;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
 }
 .navlinkbar{
@@ -21,9 +21,9 @@ body{
   margin-left: 10px;
   margin-right: 10px;
   font-size: medium;
-  background-color: rgba(255, 255, 255, 0.5); 
+  background-color: rgba(244, 244, 244, 0.081); 
   backdrop-filter: blur(10px);
-  opacity: 90%;
+  opacity: 100%;
 }
 .cusulisted li :hover{
   padding: 10px;
@@ -117,4 +117,34 @@ section{
   .avatar {
     left: 10%; /* Initial position outside the viewport */
   }
-  
+  .lets-talk{
+    background-image: linear-gradient(to right, #9c9bac, #24253F);
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    /* Adjust the colors and direction as needed */
+    /* You can also add additional background properties here */
+    box-shadow: 0 0 10px #e5eaef; /* Glow border effect */
+  }
+  .lets-talk :hover{
+    color: wheat;
+  }
+
+  @media (max-width: 900px) {
+    .stripes,
+    .avatar {
+      left: 1%;
+    }
+  }
+  @media (max-width: 900px) {
+    .col.text-center {
+      
+      margin-left: 0;
+      padding-left: 0;
+      display: block;
+      margin-top: 250px; /* Adjust the margin as needed */
+      text-align: start;
+    }
+  }
